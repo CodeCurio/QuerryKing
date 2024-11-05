@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query King</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/QueryKingLogo.png" type="image/x-icon">
+</head>
+<body>  
+
+<div class="container">
+  <h2>Query King</h2>
+  <label for="css-input">Paste your CSS code here:</label>
+  <textarea id="css-input" placeholder="Enter CSS code..."></textarea>
+
+  <button onclick="processCSSInput()">Generate Media Queries</button>
+
+  <h3>Generated Media Queries:</h3>
+  <pre id="output"></pre>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-text" id="loadingText" data-loading='["Generating output...", "Almost there...", "Just a moment..."]'>Generating output...</div>
+</div>
+
+
+
+<script src="mediaTemplates.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
