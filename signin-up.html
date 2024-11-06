@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="signin-up.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="./assets/QueryKingLogo.png" alt="Logo">
+        </a>
+        <div class="navelems">
+            <a href="./how-it-works.html">How It Works?</a>
+            <a href="#">Feedback</a>
+            <a href="./signin-up.html">Sign In/Up</a>
+        </div>
+    </nav>
+
+    <!-- Main content for Sign In/Sign Up -->
+    <div id="intro-container">
+        <div id="intro-text">
+            <p>Would you like to Sign In or Sign Up?</p>
+        </div>
+
+        <div class="options">
+            <button id="sign-in-btn">Sign In</button>
+            <button id="sign-up-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Form container for Sign In/Sign Up -->
+    <div class="form-container" id="form-container">
+        <h3 id="form-heading">Sign In</h3>
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="continue-btn" id="continue-btn">Continue</button>
+    </div>
+
+    <!-- Form container for Sign Up -->
+    <div class="form-container" id="sign-up-form-container">
+        <h3 id="sign-up-form-heading">Sign Up</h3>
+        <div class="input-field">
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-field">
+            <label for="new-password">Password</label>
+            <input type="password" id="new-password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="continue-btn" id="continue-sign-up-btn">Continue</button>
+    </div>
+
+    <script src="signin-up.js"></script>
+</body>
+</html>

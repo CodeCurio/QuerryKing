@@ -108,4 +108,27 @@ function processCSSInput() {
   }, 5000); // 5 seconds delay
 }
 
+const backgroundTextElements = document.querySelectorAll(".background-text");
+const texts = [
+    "WRITE RESPONSIVE CSS EASILY",
+    "PASTE YOUR CODE AND GET RESPONSIVE CSS"
+];
+let currentTextIndex = 0;
 
+function updateBackgroundText() {
+    // Move to the next text and update the content
+    backgroundTextElements[currentTextIndex].textContent = texts[currentTextIndex];
+
+    // Update the index to loop through the texts
+    currentTextIndex = (currentTextIndex + 1) % texts.length;
+}
+
+// Initially set the text content
+updateBackgroundText();
+
+// You can update the text dynamically as per requirements
+
+// Toggle navigation menu on hamburger click
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+  document.querySelector('nav').classList.toggle('active');
+});

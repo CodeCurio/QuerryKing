@@ -7,9 +7,29 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="assets/QueryKingLogo.png" type="image/x-icon">
 </head>
-<body>  
+<body>
 
-<div class="container">
+  <nav>
+    <img src="./assets/QueryKingLogo.png" alt="Logo" href="index.html">
+    <div class="navelems">
+        <a href="./how-it-works.html">How It Works ?</a>
+        <a href="#">Feedback</a>
+        <a href="./signin-up.html">Sign In/Up</a>
+    </div>
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<div class="king">
+  <div class="background-text-wrapper">
+    <div class="background-text">WRITE RESPONSIVE CSS EASILY</div>
+    <div class="background-text">PASTE YOUR CODE AND GET RESPONSIVE CSS</div>
+  </div>
+  <div class="container">
   <h2>Query King</h2>
   <label for="css-input">Paste your CSS code here:</label>
   <textarea id="css-input" placeholder="Enter CSS code..."></textarea>
@@ -18,12 +38,17 @@
 
   <h3>Generated Media Queries:</h3>
   <pre id="output"></pre>
+  </div>
 </div>
+
+  <!-- Effect Container for Glowing Dots or Code Snippets -->
+    <div class="effect-container"></div>
+  </div>
+
 
 <div class="loading-overlay" id="loadingOverlay">
   <div class="loading-text" id="loadingText" data-loading='["Generating output...", "Almost there...", "Just a moment..."]'>Generating output...</div>
 </div>
-
 
 
 <script src="mediaTemplates.js"></script>
