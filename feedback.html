@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Query King</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script> <!-- GSAP CDN -->
+</head>
+<body>
+    
+
+    <div class="feedback-container">
+        <!-- Larger, themed animated text -->
+        <h1 class="typewriter">Your Feedback Matters</h1>
+
+        <!-- Feedback Form -->
+        <form class="feedback-form" id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    flex-direction: column;
+}
+
+.feedback-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+}
+
+
+.typewriter {
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #007bff;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #007bff;
+    animation: typing 2s steps(30, end), blink-caret 0.6s step-end infinite;
+    margin-bottom: 0rem;
+    transition: transform 1s ease; /* Smooth transition for moving up */
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #007bff; }
+}
+
+
+/* Feedback form - hidden initially */
+.feedback-form {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    opacity: 0; /* Hidden initially */
+}
+
+/* Input and Button styling */
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.feedback-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Styling for typewriter and thank-you text */
+.typewriter, .thank-you-text {
+    font-size: 3rem;
+    color: #007bff; /* Change text color to blue */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #007bff; /* Same color as text */
+}
+
+/* Typing animation for thank-you text */
+.typing-animation {
+    animation: typing 1.5s steps(30, end), blink-caret 0.6s step-end infinite;
+}
+
+/* Keyframes for typing and blink-caret */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #007bff; } /* Match border color with text */
+}
