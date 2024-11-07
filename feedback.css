@@ -107,3 +107,99 @@ body, html {
     from, to { border-color: transparent; }
     50% { border-color: #007bff; } /* Match border color with text */
 }
+/* Media Queries for Responsiveness */
+
+/* For Tablets and smaller devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .typewriter, .thank-you-text {
+        font-size: 2.8rem; /* Slightly smaller text for tablets */
+    }
+
+    .feedback-container {
+        padding: 15px;
+    }
+
+    .feedback-form {
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    .feedback-form input, .feedback-form textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .feedback-form button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .typewriter, .thank-you-text {
+        font-size: 2rem; /* Reduce text size further on mobile */
+        text-align: center; /* Center the text for mobile */
+    }
+
+    .feedback-container {
+        padding: 10px;
+    }
+
+    .feedback-form {
+        max-width: 100%; /* Full-width form */
+        margin-top: 20px;
+    }
+
+    .feedback-form input, .feedback-form textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .feedback-form button {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+
+    /* Make the whole container take full width and align the form better */
+    .feedback-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+    @media only screen and (max-width: 360px){
+        .typewriter, .thank-you-text {
+            font-size: 1.8rem; /* Reduce text size further on mobile */
+            text-align: center; /* Center the text for mobile */
+        }
+    
+        .feedback-container {
+            padding: 6px;
+        }
+    
+        .feedback-form {
+            max-width: 100%; /* Full-width form */
+            margin-top: 20px;
+        }
+    
+        .feedback-form input, .feedback-form textarea {
+            font-size: 0.8rem;
+            padding: 12px;
+        }
+    
+        .feedback-form button {
+            font-size: 1.1rem;
+            padding: 14px;
+        }
+    
+        /* Make the whole container take full width and align the form better */
+        .feedback-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
